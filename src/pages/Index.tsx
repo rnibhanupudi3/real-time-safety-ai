@@ -4,25 +4,41 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Eye, Shield, Zap, MessageCircle, Camera, AlertTriangle, Clock, Users } from "lucide-react";
 
 const Index = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50">
       {/* Navigation */}
       <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-lg flex items-center justify-center">
-            <Shield className="w-5 h-5 text-white" />
+          <div className="w-8 h-8 flex items-center justify-center">
+            <img 
+              src="/lovable-uploads/ab3489bb-f03b-444b-a3d8-538c6d2e3f3f.png" 
+              alt="Sentinel Logo" 
+              className="w-8 h-8"
+            />
           </div>
           <span className="text-xl font-bold text-gray-900">Sentinel</span>
         </div>
         <div className="flex items-center space-x-4">
-          <Button variant="ghost" className="text-gray-600 hover:text-gray-900">
+          <Button 
+            variant="ghost" 
+            className="text-gray-600 hover:text-gray-900"
+            onClick={() => scrollToSection('why-sentinel')}
+          >
             Features
           </Button>
-          <Button variant="ghost" className="text-gray-600 hover:text-gray-900">
+          <Button 
+            variant="ghost" 
+            className="text-gray-600 hover:text-gray-900"
+            onClick={() => scrollToSection('philosophy')}
+          >
             About
-          </Button>
-          <Button variant="ghost" className="text-gray-600 hover:text-gray-900">
-            Contact
           </Button>
           <Button variant="outline" className="text-gray-700 border-gray-300">
             Log In
@@ -54,13 +70,6 @@ const Index = () => {
               className="bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white px-8 py-4 text-lg font-semibold shadow-xl"
             >
               Book a Demo
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-2 border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-4 text-lg font-semibold"
-            >
-              Sign Up / Log In
             </Button>
           </div>
         </div>
@@ -133,7 +142,7 @@ const Index = () => {
       </section>
 
       {/* Before/After Comparison */}
-      <section className="py-20">
+      <section id="why-sentinel" className="py-20">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Sentinel?</h2>
@@ -274,7 +283,7 @@ const Index = () => {
       </section>
 
       {/* Philosophy Section */}
-      <section className="py-20 bg-white">
+      <section id="philosophy" className="py-20 bg-white">
         <div className="container mx-auto px-6 text-center">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl font-bold text-gray-900 mb-8">
@@ -294,22 +303,6 @@ const Index = () => {
                 Sentinel will revolutionize how the world thinks about security.
               </p>
             </div>
-
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button 
-                size="lg" 
-                className="bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white px-12 py-4 text-xl font-semibold shadow-xl"
-              >
-                Book a Demo Now
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-2 border-gray-300 text-gray-700 hover:bg-gray-50 px-12 py-4 text-xl font-semibold"
-              >
-                Sign Up Today
-              </Button>
-            </div>
           </div>
         </div>
       </section>
@@ -319,8 +312,12 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-lg flex items-center justify-center">
-                <Shield className="w-5 h-5 text-white" />
+              <div className="w-8 h-8 flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/ab3489bb-f03b-444b-a3d8-538c6d2e3f3f.png" 
+                  alt="Sentinel Logo" 
+                  className="w-8 h-8 filter brightness-0 invert"
+                />
               </div>
               <span className="text-xl font-bold">Sentinel</span>
             </div>
