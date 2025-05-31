@@ -147,9 +147,12 @@ const Index = () => {
           <p className="text-3xl md:text-4xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
             It's about making sure it doesn't happen in the first place.
           </p>
-          <p className="text-lg text-gray-300">
-            We're starting in the U.S., but our mission is global. Sentinel is coming soon to the general public :)
-          </p>
+          <div className="mt-12 p-8 bg-gradient-to-r from-blue-900/20 via-purple-900/20 to-indigo-900/20 rounded-2xl border border-gray-700/50 backdrop-blur-sm">
+            <p className="text-xl md:text-2xl text-gray-200 font-medium leading-relaxed tracking-wide">
+              We're starting in the U.S., but our mission is global. Sentinel is coming soon to the general public{" "}
+              <span className="inline-block animate-pulse text-2xl">:)</span>
+            </p>
+          </div>
         </div>
       </section>
 
