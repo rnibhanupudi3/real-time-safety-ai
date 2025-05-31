@@ -104,25 +104,28 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            <Card className="bg-gray-900 border-gray-600">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-3 text-red-400">Traditional Problem</h3>
-                <p className="text-gray-300">You miss critical events because systems can't be tailored to what you care about</p>
-              </CardContent>
-            </Card>
-            <Card className="bg-gray-900 border-gray-600">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-3 text-red-400">Alert Fatigue</h3>
-                <p className="text-gray-300">You get alert fatigue from false alarms</p>
-              </CardContent>
-            </Card>
-            <Card className="bg-gray-900 border-gray-600">
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-3 text-red-400">Wasted Time</h3>
-                <p className="text-gray-300">You waste hours reviewing footage that could have been surfaced in seconds</p>
-              </CardContent>
-            </Card>
+          <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-8 mb-16">
+            <h3 className="text-2xl font-semibold mb-6 text-center text-red-300">The status quo in security</h3>
+            <div className="grid md:grid-cols-3 gap-8">
+              <Card className="bg-gray-900 border-gray-600">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-semibold mb-3 text-red-400">Fixed Rules</h4>
+                  <p className="text-gray-300">You miss critical events because systems can't be tailored to what you care about</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-gray-900 border-gray-600">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-semibold mb-3 text-red-400">Alert Fatigue</h4>
+                  <p className="text-gray-300">You get alert fatigue from false alarms</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-gray-900 border-gray-600">
+                <CardContent className="p-6">
+                  <h4 className="text-xl font-semibold mb-3 text-red-400">Wasted Time</h4>
+                  <p className="text-gray-300">You waste hours reviewing footage that could have been surfaced in seconds</p>
+                </CardContent>
+              </Card>
+            </div>
           </div>
 
           <div className="text-center bg-gradient-to-r from-blue-900/30 to-purple-900/30 p-8 rounded-lg border border-gray-700">
