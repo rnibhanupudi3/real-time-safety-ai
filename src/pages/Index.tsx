@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Camera, Bell, Clock, Calendar } from "lucide-react";
@@ -139,10 +140,10 @@ const Index = () => {
       {/* Philosophy Section */}
       <section id="about" className="py-20 bg-gray-900">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-red-400">
+          <h2 className="text-xl text-red-400 font-bold mb-8">
             Real safety isn't about recording what happened.
           </h2>
-          <p className="text-2xl md:text-3xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+          <p className="text-3xl md:text-4xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
             It's about making sure it doesn't happen in the first place.
           </p>
           <p className="text-lg text-gray-300">
